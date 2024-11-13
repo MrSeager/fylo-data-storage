@@ -108,4 +108,8 @@ body {
     .cs-note::before {
         display: none;
     }
+
+    .cs-bg-image {
+        background: url('../images/bg-mobile.png') no-repeat center center / 100% 100%;
+    }
 }
