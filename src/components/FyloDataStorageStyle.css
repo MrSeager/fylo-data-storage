@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.cs-w {
+    width: 1100px !important;
+}
+
+.cs-w-2 {
+    width: 200px !important;
+}
+
+.cs-pos {
+    position: relative;
+}
+
+.cs-note {
+    position: absolute;
+    right: 16%;
+    bottom: 55%;
+    transform: translate(50%, -50%); 
+}
+
+.cs-note::before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 0;
+    bottom: -75%;
+    border: 32px solid;
+    border-color: transparent white transparent transparent;
+    transform: translate(0%, -50%); 
+}
+
+.cs-ratio {
+    aspect-ratio: 1/1;
+}
+
+/*Background*/
+.cs-bg-image {
+    background-color: hsl(229, 57%, 11%) !important;
+    background: url('../images/bg-desktop.png') no-repeat bottom center / 100% 50%;
+}
+
+.cs-bg-blue {
+    background-color: hsl(228, 56%, 26%) !important;
+}
+
+.cs-bg-dark-blue {
+    background-color: hsl(229, 57%, 11%) !important;
+}
+
+/*Border*/
+.cs-radius {
+    border-radius: 1rem 5rem 1rem 1rem;
+}
+
+/*Buttons*/
+.cs-btn {
+    background-color: hsl(229, 57%, 11%) !important;
+    border-color: hsl(229, 57%, 11%) !important;
+    aspect-ratio: 1/1 !important;
+}
+
+/*Font*/
+.cs-fw-700 {
+    font-weight: 700 !important;
+}
+
+/*Progress Bar*/
+.cs-pb {
+    border-color: hsl(229, 57%, 11%) !important;
+    background-color: hsl(229, 57%, 11%);
+}
+
+.cs-pb .progress-bar {
+    background: linear-gradient(90deg, rgba(255,163,153,1) 0%, rgba(255,77,151,1) 100%) !important;
+    border-radius: 1em;
+    position: relative;
+}
+
+.cs-pb .progress-bar::after { 
+    content: ''; 
+    width: 10px; 
+    height: 10px; 
+    background-color: white; 
+    border-radius: 50%; 
+    position: absolute; 
+    right: 0; 
+    top: 50%; 
+    transform: translate(-15%, -50%); 
+}
+
+@media (max-width: 991px) {
+    .cs-w {
+        width: 100% !important;
+    }
+
+    .cs-note {
+        position: absolute;
+        right: 50%;
+        bottom: -50%;
+    }
+    
+    .cs-note::before {
+        display: none;
+    }
+}
